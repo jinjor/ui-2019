@@ -1,11 +1,10 @@
-import hyperHTML from "./hyperhtml.js";
+import { html } from "./html.js";
 
 export class MyComponent extends HTMLElement {
   constructor() {
     super();
     const shadowRoot = this.attachShadow({ mode: "open" });
-    const html = hyperHTML(shadowRoot);
-    html`
+    shadowRoot.innerHTML = html`
       <style>
         :host {
           display: block;

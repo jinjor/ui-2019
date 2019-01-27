@@ -3,4 +3,3 @@
 - TypeScript
 - ES6 Modules
 - Web Components
-- hyperHTML
